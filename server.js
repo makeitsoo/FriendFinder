@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 // require routing files using express app
 require("./app/routing/htmlRoutes")(app);
-// require("./app/routing/apiRoutes")(app);
+require("./app/routing/apiRoutes")(app);
 
 
 // listener
