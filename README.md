@@ -11,10 +11,22 @@ Friend Finder is deployed to Heroku. Please check it out here.
 ## Installation
 To install the application follow the instructions below:
 
-git clone git@github.com:angrbrd/friend-finder.git
+git clone https://github.com/makeitsoo/FriendFinder.git
 cd FriendFinder
 npm install
-Running Locally
+node server.js
 
 ## node server.js
 The application will now be running locally on PORT 8000. You can then access it locally from your browser at the URL: localhost:8000.
+
+## routes
+The application has two html pages and an API (json). The following are the routes for each, but all can easily be accessed through the home page of app: 
+
+### home
+localhost:8000
+
+### survey
+localhost:8000/survey
+
+### api
+localhost:8000/api/friends
