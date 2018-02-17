@@ -12,6 +12,8 @@ var friendsData = require("../data/friends.js");
 //////////////////////////////////////
 
 module.exports = function(app) {
+
+	
 	// route for api (json data)
 	app.get("/api/friends", function(req, res) {
 		res.json(friendsData);
@@ -22,24 +24,25 @@ module.exports = function(app) {
 
 	// post route 
 	app.post("/api/friends", function(req, res) {
-		console.log("friendsData: ",friendsData);
+		// console.log("friendsData: ",friendsData);
 		var newFriend = req.body;
+		console.log("newFriend: ", newFriend);
 		var friendListScoreCard = [];
 
 		for (i = 0; i < friendsData.length; i++) {
 			var scoreDiff = 0;
 			for (j = 0; j < 10; j++) {
 				var userScoreCard = newFriend['scores[]'];
-				console.log("userScoreCard: ", userScoreCard);
+				// console.log("userScoreCard: ", userScoreCard);
 				var friendScoreCard = friendsData[i].scores;
-				console.log("friendScoreCard: ", friendScoreCard);
+				// console.log("friendScoreCard: ", friendScoreCard);
 
 				scoreDiff += Math.abs(parseInt(userScoreCard[j]) - friendsData[i].scores[j]);
-				console.log("scoreDiff: ", scoreDiff);
+				// console.log("scoreDiff: ", scoreDiff);
 
 			}
 			friendListScoreCard.push(scoreDiff);
-			console.log("friendListScoreCard_1: ", friendListScoreCard);
+			// console.log("friendListScoreCard_1: ", friendListScoreCard);
 
 		}
 		var min = Math.min.apply(null, friendListScoreCard);
@@ -57,6 +60,7 @@ module.exports = function(app) {
 				}
 				console.log("bestFriend: ", bestFriend);
 				res.send(bestFriend);
+				// res.json(newFriend);
 
 			};
 		};
