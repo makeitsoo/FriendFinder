@@ -64,7 +64,7 @@ module.exports = function(app) {
 
 			};
 		};
-		friendsData.push(newFriend);
+		// friendsData.push(newFriend);
 
 	});
 };
