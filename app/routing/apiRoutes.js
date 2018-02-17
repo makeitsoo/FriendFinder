@@ -13,7 +13,7 @@ var friendsData = require("../data/friends.js");
 
 module.exports = function(app) {
 
-	
+
 	// route for api (json data)
 	app.get("/api/friends", function(req, res) {
 		res.json(friendsData);
@@ -27,6 +27,7 @@ module.exports = function(app) {
 		// console.log("friendsData: ",friendsData);
 		var newFriend = req.body;
 		console.log("newFriend: ", newFriend);
+		// friendsData.push(newFriend);
 		var friendListScoreCard = [];
 
 		for (i = 0; i < friendsData.length; i++) {

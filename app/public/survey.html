@@ -252,17 +252,17 @@
             scores: survey()
           };
 
-          console.log(userData);
+          console.log("User Info: ", userData);
 
           // AJAX post the data to the friends API.
           $.post("/api/friends", userData, function(data) {
-            console.log(data);
+            console.log("Best Friend Info: ", data);
 
             // Grab the result from the AJAX post so that the best match's name and photo are displayed.
             $("#matchNameforModal").text(data.newFriendName);
             $("#modalPhoto").attr("src", data.newFriendPhoto);
             $("#modalPhoto").attr("height", '400px');
-            $("#modalPhoto").attr("width", '300px');
+            $("#modalPhoto").attr("width", '550px');
             // Show the modal with the best match
             $("#results-modal").modal("toggle");
 
