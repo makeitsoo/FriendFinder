@@ -1,23 +1,5 @@
 // You should save your application's data inside of `app/data/friends.js` as an array of objects. Each of these objects should roughly follow the format below.
 
-// ```json
-// {
-//   "name":"Ahmed",
-//   "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-//   "scores":[
-//       5,
-//       1,
-//       4,
-//       4,
-//       5,
-//       1,
-//       2,
-//       5,
-//       4,
-//       1
-//     ]
-// }
-// ```
 var friendsData = [
 
 	{
@@ -26,13 +8,13 @@ var friendsData = [
 		scores: [2, 5, 1, 3, 2, 4, 1, 2, 1, 1]
 
 	}, {
-		name: 'Rick Grimes',
-		photo: 'https://undeadwalking.com/wp-content/blogs.dir/318/files/2014/12/tumblr_nfvsj4l1vV1qzb6bqo4_1280rick1.jpg',
+		name: 'Fred Flinstone',
+		photo: 'https://vignette.wikia.nocookie.net/flinstones/images/a/ad/Fred_Flintstone.png/revision/latest?cb=20110919071811',
 		scores: [2, 2, 1, 3, 2, 4, 5, 5, 1, 1]
 
 	}, {
-		name: 'Michael Scott',
-		photo: 'http://www.etonline.com/sites/default/files/images/2017-01/1280_Steve_Carell_Michael-Scott_TheOffice_NBC.jpg',
+		name: 'Gandalf the Gray',
+		photo: 'https://cnet1.cbsistatic.com/img/ASs8fPO24m_PuIO4ErAaCrfdKy0=/2014/12/01/89601d70-ca65-4dc7-adfe-f6dbd46d05ba/hobbit-lotr-5-armies-gandalf-hat.jpg',
 		scores: [1, 2, 1, 5, 1, 4, 4, 1, 3, 3]
 
 	}, {
@@ -40,12 +22,12 @@ var friendsData = [
 		photo: 'http://ksassets.timeincuk.net/wp/uploads/sites/54/2016/02/zombies-3.jpg',
 		scores: [2, 4, 4, 1, 2, 5, 5, 1, 2, 1]
 	}, {
-		name: 'Leloo Dallas Multipass',
-		photo: 'https://i.imgur.com/muvswfA.jpg',
+		name: 'Greg Brady',
+		photo: 'https://upload.wikimedia.org/wikipedia/commons/4/41/The_Brady_Bunch_Barry_Williams_1973.jpg',
 		scores: [5, 1, 2, 2, 1, 1, 5, 5, 5, 1]
 	}, {
-		name: 'Hellraiser',
-		photo: 'http://cdn.bloody-disgusting.com/wp-content/uploads/2016/08/Hellraiser.jpeg',
+		name: 'Papa Smurf',
+		photo: 'https://vignette.wikia.nocookie.net/sonypicturesanimation/images/0/04/Papa_smurfs_2017.png/revision/latest?cb=20170427155403',
 		scores: [3, 4, 1, 5, 1, 3, 2, 2, 1, 1]
 	}
 

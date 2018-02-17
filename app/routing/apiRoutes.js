@@ -27,7 +27,6 @@ module.exports = function(app) {
 		// console.log("friendsData: ",friendsData);
 		var newFriend = req.body;
 		console.log("newFriend: ", newFriend);
-		// friendsData.push(newFriend);
 		var friendListScoreCard = [];
 
 		for (i = 0; i < friendsData.length; i++) {
@@ -65,14 +64,8 @@ module.exports = function(app) {
 
 			};
 		};
+		friendsData.push(newFriend);
 
-
-		// var scores = newFriend.scores;
-		// // friendsData.push(newFriend);
-
-
-		// console.log("newFriend: ", newFriend);
-		// res.json(true);
 	});
 };
 
