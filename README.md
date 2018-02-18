@@ -9,7 +9,7 @@ Friend Finder application is meant to simulate a simple dating app. The applicat
 Friend Finder is deployed to Heroku. Please check it out here: https://match-makr.herokuapp.com/.
 
 ## Installation
-To install the application follow the instructions below:
+To install and run the application follow the instructions below:
 ```
 git clone https://github.com/makeitsoo/FriendFinder.git
 cd FriendFinder
